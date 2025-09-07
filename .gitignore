@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# VS Code settings folder
+.vscode/
+
+# Python-specific files
+*.pyo
+*.pyd
+.Python
+
+# Google service account credential file (keep secret!)
+attendance-marker-471409-b1883fee5936.json
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# OS generated files
+.DS_Store
+Thumbs.db
