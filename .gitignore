@@ -2,11 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.json
+
 
 # Virtual environment
 venv/
 env/
-
+.env
 # Distribution / packaging
 build/
 dist/
@@ -21,7 +23,7 @@ dist/
 .Python
 
 # Google service account credential file (keep secret!)
-attendance-marker-471409-b1883fee5936.json
+./attendance-marker-471409-b1883fee5936.json
 
 # Logs and databases
 *.log
@@ -30,3 +32,4 @@ attendance-marker-471409-b1883fee5936.json
 # OS generated files
 .DS_Store
 Thumbs.db
+

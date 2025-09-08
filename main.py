@@ -3,8 +3,9 @@ import datetime
 import webbrowser
 import customtkinter
 import threading
-
-
+import os
+import dotenv 
+dotenv.load_dotenv()
 # Set the appearance mode and default color theme
 customtkinter.set_appearance_mode("System")  # Modes: "System", "Dark", "Light"
 customtkinter.set_default_color_theme("blue")  # Themes: "blue", "dark-blue", "green"
@@ -12,8 +13,8 @@ customtkinter.set_default_color_theme("blue")  # Themes: "blue", "dark-blue", "g
 
 # Authenticate with Google Sheets using service account credentials
 try:
-    gc = gspread.service_account(filename='attendance-marker-471409-b1883fee5936.json')
-    gsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1OuXbHes2XjxjxzNU26mq69yKj3012R1zbiuA1vFD35g/edit?gid=0")
+    gc = gspread.service_account(filename=os.getenv('data'))
+    gsheet = gc.open_by_url(os.getenv('gsheet'))
     wsheet = gsheet.worksheet("Sheet1")
 except Exception as e:
     print(f"Error authenticating with Google Sheets: {e}")
