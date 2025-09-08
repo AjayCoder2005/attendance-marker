@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -33,3 +34,8 @@ dist/
 .DS_Store
 Thumbs.db
 
+=======
+# Google service account credential file (keep secret!)
+attendance-marker-471409-b1883fee5936.json
+
+>>>>>>> ad1859958f4c865b753bb9101483db4d2bbce8db
